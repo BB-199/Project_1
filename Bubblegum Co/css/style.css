@@ -1,0 +1,333 @@
+/*common styles*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #B6EDD1;
+    font-family: 'Staatliches', cursive;
+    
+}
+
+nav{
+    height:3vh;
+    background-color: #75EDD1;
+    
+    
+}
+
+.hamburger{
+    position: fixed;
+    top:0;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height:100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    
+}
+
+.nav-links li a{
+   color: white; 
+   text-decoration: none;
+   font-size: 20px;
+   display: inline;
+}
+
+
+
+ /*nav*/
+ .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+  nav{
+        position: relative;
+    }
+
+  .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top:50%;
+        transform: translate(-5%, -50%);
+        z-index:2;
+
+
+    }
+
+
+    .nav-links {
+        position: fixed;
+        background:#75EDD1;
+        height:100vh;
+        width:100px;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .landing {
+        flex-direction: column;
+     }
+
+    .nav-links li {
+        opacity: 0;
+      }
+
+    .nav-links li a {
+        font-size: 25px;
+      }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+      }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+      }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+      }
+    
+     li.fade {
+        opacity: 1;
+      } 
+
+      /*home page*/
+.Landing{
+  height:1200px;
+  width: auto;
+  
+
+}
+
+.landing-image{
+
+padding-left: 60px;
+width:100%;
+
+}
+
+
+.Landing h1{
+  font-size: 10rem;
+  color: #FFB1D0;
+  font-family: 'Modak', cursive;
+  text-align: center;
+  text-shadow: -10px 0px white;
+
+}
+
+.Landing h2{
+   font-size:7rem;
+   color: #75EDD1;
+   font-family: 'Staatliches', cursive;
+   text-align: center;
+   text-shadow: -4px 0px white;
+}
+
+.clock {
+display: inline-block;
+font-size: 4rem;
+font-family: 'Modak', cursive;
+list-style-type: none;
+padding: 1em;
+padding-top: 0;
+text-transform: uppercase;
+color:#FFB1D0;
+}
+
+.clock span {
+display: block;
+font-size: 10rem;
+color: white;
+text-shadow: -4px 0px #75EDD1;
+}
+
+.countdown {
+color: #333;
+text-align: center;
+}
+.button{
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.button_1{
+  background-color: white;
+  color: #75EDD1;
+  
+}
+
+.button_1:hover{
+  background-color: #FFB1D0;
+  color: #75EDD1;
+}
+     /*booking page*/
+      .book{
+        height:1300px;
+        
+      }
+
+      .book h2{
+        font-size:80px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        color: #75EDD1;
+        font-family: 'Staatliches', cursive;
+        text-align: center;
+        text-shadow: -4px 0px white;
+      }
+
+      .book_text{
+        color: #FFB1D0;
+        font-size: 50px;
+      }
+
+      .image_clock{
+        display: inline-block;
+        align-self: center;
+        padding-left: 70px;
+      }
+
+      .sneak-peak{
+        height:1300px;
+        
+      }
+
+      .sneak-peak h2{
+        font-size:80px;
+        padding-top: 25px;
+        color: #75EDD1;
+        font-family: 'Staatliches', cursive;
+        text-align: center;
+        text-shadow: -4px 0px white;
+      }
+
+      .images{
+          display: block;
+          align-self: center;
+          
+      }
+
+      
+     /*location page*/
+      .location-page{
+        height:1100px;
+        background-size:cover; 
+      }
+
+      .location-page h2{
+        font-size:80px;
+        color: #75EDD1;
+        font-family: 'Staatliches', cursive;
+        text-align: center;
+        text-shadow: -4px 0px white;
+
+      }
+      .location-text{
+        font-size: 50px;
+        text-align: center;
+        color: #FFB1D0;
+      }
+
+      
+      
+      /*about us page*/
+      .about-us{
+        height:1000px;
+        background-size:cover; 
+      }
+
+      .about-us h2{
+        font-size:80px;
+        color: #75EDD1;
+        font-family: 'Staatliches', cursive;
+        text-align: center;
+        text-shadow: -4px 0px white;
+        padding-bottom: 100px;
+      }
+
+      .about{
+          background-color: #FFB1D0;
+          align-items: center;
+          width:1100px;
+          height:595px;
+          margin: auto;
+          
+          
+      }
+
+      .text{
+          padding: 100px;
+          font-size: 30px;
+          text-align: center;
+          color: white;
+      }
+       /*comments page*/
+      .comments{
+        height:1000px;
+        background-size:cover; 
+      }
+
+      .comments h2{
+        font-size:80px;
+        color: #75EDD1;
+        font-family: 'Staatliches', cursive;
+        text-align: center;
+        text-shadow: -4px 0px white;
+      }
+
+      form{
+        width: 70%;
+        margin:0 auto;
+    }
+    
+    form *{
+        width:100%;
+        display:block;
+        margin: 20px 0px;
+        padding: 10px;
+    }
+    
+    form input[type="submit"]
+    {
+        width:120px;
+        border:none;
+        cursor:pointer;
+    }
+    .p_comment{
+      font-size: 30px;
+      color: #FFB1D0;
+
+    }
+
+    .title{
+      color: #FFB1D0;
+    }
+      

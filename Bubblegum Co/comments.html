@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale+1.0"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <link href="https://fonts.googleapis.com/css2?family=Modak&family=Staatliches&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/style.css"/>
+        <script src="script/sricpt.js"></script>
+
+    </head>
+    <body>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Reserve Your Spot</a></li>
+                <li><a href="sneakPeak.html">Sneak Peak</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="comments.html">Share Your Style</a></li>
+                
+            </ul>
+    
+         </nav>
+        
+        <section class="comments">
+            <h2>Comments</h2>
+            <form methods="POST" id="createForm">
+                <p_comment>Fill in the below from to create a post</p>
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Post Title"/>
+
+                <textarea id="content" placeholder ="Post Content"></textarea>
+
+                <input type="file" id="cover" placeholder="Choose file"/>
+
+                <input id="postSubmit" type="submit" value="Submit"/>
+            
+            </form>
+            <div id="progressHandler">
+                <p_comment>processing the Request. Please wait...</p>
+                <progress id="progressBar" value="" max="100">
+            </div>
+        </section>
+
+         
+
+        <script src="js/script.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+    </body>    
+</html>
